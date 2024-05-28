@@ -69,11 +69,11 @@ Failed_RDP_with_GEO_CL
 | summarize event_count=count() by timestamp, label, country, state, sourcehost, username, destination, longitude, latitude
 ```
 
-###Change the visualization to a map, select full view, and adjust the metric label to label.
+### Change the visualization to a map, select full view, and adjust the metric label to label.
 
-###Visualization Example
+### Visualization Example
 
-###This visualization shows the geolocation of threat actors attempting to log into the honeypot.
+### This visualization shows the geolocation of threat actors attempting to log into the honeypot.
 
 ![image](https://github.com/Agrestiic/Projects/assets/114885541/c65d3134-681f-471e-b2a2-d53355ba3dd8)
 
