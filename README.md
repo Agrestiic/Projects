@@ -27,6 +27,7 @@ This project demonstrates setting up a honeypot using Azure Sentinel, ingesting 
 ### 4. Connect VM to Log Analytics Workspace
 1. Go to the Log Analytics Workspace.
 2. Connect it to your virtual machine by selecting the VM from the classic tab.
+3. Save PowerShell script from https://github.com/joshmadakor1/Sentinel-Lab/blob/main/Custom_Security_Log_Exporter.ps1 insert your API key into the key field
 
 ### 5. Connect Microsoft Sentinel
 1. Go to Microsoft Sentinel.
