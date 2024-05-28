@@ -50,7 +50,8 @@ This project demonstrates setting up a honeypot using Azure Sentinel, ingesting 
 
 ### 10. Query and Visualize Data
 1. After about 15 minutes, query the log with the naming convention `Failed_RDP_with_GEO_CL` (case-sensitive).
-2. Use the following KQL query:
+2. Head to Sentinel and open a new workbook
+3. Use the following KQL query:
 
 
 ```kql
