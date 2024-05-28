@@ -52,6 +52,7 @@ This project demonstrates setting up a honeypot using Azure Sentinel, ingesting 
 1. After about 15 minutes, query the log with the naming convention `Failed_RDP_with_GEO_CL` (case-sensitive).
 2. Use the following KQL query:
 
+
 ```kql
 Failed_RDP_with_GEO_CL
 | extend username = extract(@"username:([^]+)", 1, RawData)
@@ -66,8 +67,7 @@ Failed_RDP_with_GEO_CL
 | where destination != "samplehost"
 | where sourcehost != ""
 | summarize event_count=count() by timestamp, label, country, state, sourcehost, username, destination, longitude, latitude
-
-
+```
 
 ###Change the visualization to a map, select full view, and adjust the metric label to label.
 
@@ -76,3 +76,7 @@ Failed_RDP_with_GEO_CL
 ##T#his visualization shows the geolocation of threat actors attempting to log into the honeypot.
 
 ![image](https://github.com/Agrestiic/Projects/assets/114885541/c65d3134-681f-471e-b2a2-d53355ba3dd8)
+
+
+
+
